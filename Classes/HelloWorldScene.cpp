@@ -63,6 +63,15 @@ bool HelloWorld::init()
 
     // add the label as a child to this layer
     this->addChild(pLabel, 1);
+	
+	 CCLabelTTF* pLabel2 = CCLabelTTF::create("Hello World!!!!!!!!!!!!!!!!!!!!!!!", "Arial", 24);
+    
+    // position the label on the center of the screen
+    pLabel2->setPosition(ccp(origin.x + visibleSize.width/2 -30,
+                            origin.y + visibleSize.height - pLabel2->getContentSize().height-30));
+
+    // add the label as a child to this layer
+    this->addChild(pLabel2, 1);
 
     // add "HelloWorld" splash screen"
     CCSprite* pSprite = CCSprite::create("HelloWorld.png");

@@ -86,6 +86,8 @@ bool HelloWorld::init()
 }
 
 //test1
+//test2
+
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {
